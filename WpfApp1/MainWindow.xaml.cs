@@ -67,5 +67,10 @@ namespace WpfApp1
                 platform.AddContent(s);
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            tartalom.SelectedItem = platform.Leghosszabb();
+        }
     }
 }
