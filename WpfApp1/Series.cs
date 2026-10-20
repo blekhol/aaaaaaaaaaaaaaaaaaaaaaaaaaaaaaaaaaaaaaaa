@@ -21,6 +21,9 @@ namespace WpfApp1
             this.videos = videos;
         }
 
+        public string Title { get => title; }
+        public List<Video> Videos { get => videos; }
+
         public int GetLength()
         {
             return videos.Sum(v => v.Length);
