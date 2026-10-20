@@ -23,7 +23,7 @@ namespace WpfApp1
 
             Beolvas();
 
-            Trace.Write(platform.ToString());
+            tartalom.ItemsSource = platform.Tartalmak;
         }
 
         void Beolvas()

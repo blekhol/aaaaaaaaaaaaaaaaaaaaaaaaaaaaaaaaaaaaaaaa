@@ -13,6 +13,9 @@ namespace WpfApp1
             this.video = video;
         }
 
+        public string Title { get => video.Title; }
+        public int Length { get => video.Length; }
+
         public int GetLength()
         {
             return video.Length;

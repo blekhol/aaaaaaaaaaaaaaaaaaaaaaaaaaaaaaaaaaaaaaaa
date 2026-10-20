@@ -12,6 +12,8 @@ namespace WpfApp1
         {
         }
 
+        public List<IContent> Tartalmak { get => tartalmak; }
+
         public void AddContent(IContent content)
         {
             tartalmak.Add(content);
@@ -21,5 +23,7 @@ namespace WpfApp1
         {
             return tartalmak.MaxBy(v => v.GetLength());
         }
+
+
     }
 }

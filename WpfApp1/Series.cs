@@ -22,7 +22,7 @@ namespace WpfApp1
         }
 
         public string Title { get => title; }
-        public List<Video> Videos { get => videos; }
+        public int Length { get => GetLength(); }
 
         public int GetLength()
         {

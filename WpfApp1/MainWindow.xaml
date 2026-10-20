@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Label Content="Tartalmak" HorizontalAlignment="Left" Margin="28,48,0,0" VerticalAlignment="Top" Width="282"/>
+        <ListBox x:Name="tartalom" Margin="28,79,490,246">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Title}" />
+                        <TextBlock Text=" - "/>
+                        <TextBlock Text="{Binding Length}" />
+                        <TextBlock Text=" perc"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
 
     </Grid>
 </Window>
