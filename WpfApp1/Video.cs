@@ -14,5 +14,8 @@ namespace WpfApp1
             this.title = title;
             this.length = length;
         }
+
+        public string Title { get => title; set => title = value; }
+        public int Length { get => length; set => length = value; }
     }
 }
